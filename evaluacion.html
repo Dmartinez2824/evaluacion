@@ -17,25 +17,34 @@
 
         <div>
             <label for="incidencia">Número incidencia:</label>
-            <input type="text" valid="incidencia" value="Q1157" readonly required>
+            <input type="text" valid="incidencia" value="Q1157" readonly required> 
+            <label>fecha y hora de recepción</label>
+            <input type="datetime-local" value="2019-05-17" />
         </div><br>
 
         <h3>informacion usuario</h3><br><br>
 
         <div>
             <label for="name">nombre del cliente:    </label>
-            <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z ]"><br>
+            <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z ]"> 
+            <label for="identificacion">identificacion: </label>
+            <input type="number" pattern="[0-9]" maxlength="12">
         </div><br>
 
         <div>
         <label>Tipo de identificacion:     
-            <select name="identificacion" id="identificacion" required>
-                <option value="CC">CC</option>
-                <option value="TI" selected>TI</option>
-                <option value="RC">RC</option>
+            <select name="identificacion" id="identificacion" required>      
+                <option value="CC">CC</option>                                  
+                <option value="TI"selected>TI</option>                         
+                <option value="RC">RC</option>                                  
                 <option value="CE">CE</option>
-            </select>
-        </label>
+            </select></label>
+            <label>Tipo de solicitante</label>
+            <select name="solicitante" id="solicitante" required>
+                <option value="estudiante" name="solicitante">01-estudiante</option>
+                <option value="acudiente" name="solicitante">02-acudiente</option>
+                <option value="profesor"selected name="solicitante">03-profesor</option></select>
+        
         </div><br>
 
         <div>
@@ -47,17 +56,20 @@
 
         <div>
             <label for="pais">País: </label>
-            <input type="text" valid="país" value="Colombia" readonly required>
-        </div>
+            <input type="text" valid="país" value="Colombia" readonly required><label for="departamento">departamento:  </label> 
+            <input type="text" valid="país" value="Bogota D.C" readonly required>
+        </div><br>
 
         <div>
             <label for="ciudad">Ciudad:</label>
             <input type="text" valid="ciudad" value="Bogota D.C." readonly required>
-        </div>
+        </div><br>
         <div>
-            <label for="telefono">telefono</label>
-            <input type="text" minlength="10" maxlength="12" name="telefono" pattern="[0-9]+" placeholder="min 10, num, max 12"><br>
-        </div>
+            <label for="telefono">telefono: </label>
+            <input type="number" name="telefono" pattern="[0-9]" placeholder="min 10, num, max 12">
+            <label for="Celular">Celular: </label>
+            <input type="number" minlength="10" maxlength="12" name="Celular" pattern="[0-9]"><br>
+        </div><br>
 
         <div>
             <label>medio de contacto preferido:
@@ -67,6 +79,8 @@
                     <option value="numero">numero telefonico</option>
                 </select>
             </label>
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" ><br>
         </div><br>
         <h3>informacion solicitud</h3>
         <div>
@@ -85,7 +99,7 @@
         </div>
         <div>
             <label for="imagenes">Adjunto:</label>
-            <input type="file" id="imagenes" name="imagenes" accept="image/*" multiple>
+            <input type="file" id="imagenes" name="imagenes" accept=".png,.jpg" multiple>
         </div><br>
 
         
