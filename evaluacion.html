@@ -9,36 +9,67 @@
 
 <body>
   <main>
-    <h1>contacto</h1>
+    <h1>EVALUACION</h1>
     
   </main>
     <hr>
     <form>
+
       <div>
-        <label for="incidencia">Número incidencia:    </label>
-        <input type="text" id="incidencia" minlength="5" maxlength="5" required>
+        <label for="incidencia">Número incidencia:</label>
+        <input type="text" valid="incidencia" value="Q1157" readonly required>
       </div><br>
+
     <h3>informacion usuario</h3><br><br>
+
       <div>
         <label for="name">nombre del cliente:    </label>
-        <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z ]+{1-5}"><br>
+        <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z ]"><br>
       </div><br>
 
       <div>
         <label>Tipo de identificacion:     
-          <select name="identificacion" id="identificacion" required>
-            <option value="CC">CC</option>
-            <option value="TI" selected>TI</option>
-            <option value="RC">RC</option>
-            <option value="CE">CE</option>
-        </select>
+            <select name="identificacion" id="identificacion" required>
+                <option value="CC">CC</option>
+                <option value="TI" selected>TI</option>
+                <option value="RC">RC</option>
+                <option value="CE">CE</option>
+            </select>
         </label>
       </div><br>
+
       <div>
         <label for="email">E-mail: </label>
-        <input id="email" type="email" name="email" required><br>
+        <input id="email" type="email" name="email"><br>
       </div><br>
+      
     <h3>informacion de contacto</h3>
+
+    <div>
+        <label for="pais">País: </label>
+        <input type="text" valid="país" value="Colombia" readonly required>
+    </div>
+
+    <div>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" valid="ciudad" value="Bogota D.C." readonly required>
+    </div>
+    <div>
+        <label for="telefono">telefono</label>
+        <input type="text" minlength="10" maxlength="12" name="telefono" pattern="[0-9]+" placeholder="min 10, num, max 12"><br>
+    </div>
+
+    <div>
+        <label>medio de contacto preferido:
+            <select name="contacto" id="contacto" required>
+                <option value="mensaje">mensaje txt</option>
+                <option value="correo" selected>correo escrito</option>
+                <option value="numero">numero telefonico</option>
+            </select>
+        </label>
+      </div><br>
+      
+    <button value="submit">enviar</button>
 
 </body>
 </html>
