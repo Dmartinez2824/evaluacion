@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portada</title>
 </head>
+
 <body>
+  <main>
+    <h1>contacto</h1>
     
+  </main>
+    <hr>
+    <form>
+      <div>
+        <label for="incidencia">Número incidencia:    </label>
+        <input type="text" id="incidencia" minlength="5" maxlength="5" required>
+      </div><br>
+    <h3>informacion usuario</h3><br><br>
+      <div>
+        <label for="name">nombre del cliente:    </label>
+        <input id="name" type="text" name="name" placeholder="nombre completo" pattern="[A-Za-z ]+{1-5}"><br>
+      </div><br>
+
+      <div>
+        <label>Tipo de identificacion:     
+          <select name="identificacion" id="identificacion" required>
+            <option value="CC">CC</option>
+            <option value="TI" selected>TI</option>
+            <option value="RC">RC</option>
+            <option value="CE">CE</option>
+        </select>
+        </label>
+      </div><br>
+      <div>
+        <label for="email">E-mail: </label>
+        <input id="email" type="email" name="email" required><br>
+      </div><br>
+    <h3>informacion de contacto</h3>
+
 </body>
 </html>
