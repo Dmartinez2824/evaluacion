@@ -6,7 +6,7 @@
     "configurations": [
         {
             "type": "chrome",
-            "request": "launch",
+            "request": "lanch",
             "name": "Open evaluacion.html",
             "file": "d:\\evaluacionhtml\\evaluacion.html"
         }
